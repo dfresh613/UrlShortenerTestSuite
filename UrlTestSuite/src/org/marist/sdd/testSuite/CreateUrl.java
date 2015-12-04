@@ -10,9 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class CreateUrl extends UrlShortenerTestCase{
 	private final String urlSuccessLocator = "//h3[contains(.,'Shortened URL ready!')]";
 	private final String backHomeId = "//button[@id='backHome']";
-	private final String desiredIdString = "testId";
+	private final String desiredIdString = "newidtouse";
 	private final String longUrlString = "https://www.youtube.com/watch?v=RSS1zh45Fts";
-	private final String shortLinkId = "//a[@href='http://www.mini.com/?id="+desiredIdString+"']";
+	private final String shortLinkId = "//a[@href='http://www.mini.com/Mini/?"+desiredIdString+"']";
 
 	public CreateUrl(WebDriver driver, WebDriverWait wait) {
 		super(driver, wait);
